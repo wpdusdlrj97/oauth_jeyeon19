@@ -37,8 +37,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth
                 .inMemoryAuthentication()
-                .withUser("wpdusdlrj97").password(passwordEncoder().encode("password")).roles("USER").and()
-                .withUser("admin").password(passwordEncoder().encode("password")).roles("USER","ADMIN");
+                .withUser("wpdusdlrj97").password(passwordEncoder().encode("password")).roles("USER");
 
     }
 
