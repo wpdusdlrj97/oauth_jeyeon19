@@ -33,7 +33,7 @@ public class OAuth2AuthorizationServer extends AuthorizationServerConfigurerAdap
                 .authorities("READ_ONLY_CLIENT")
                 .scopes("read_profile_info")
                 .resourceIds("oauth2-resource")
-                .redirectUris("http://13.209.40.189/fitmelogin_callback.php")
+                .redirectUris("http://49.247.136.36/web/fitmelogin_callback.php")
                 .accessTokenValiditySeconds(5000)
                 .refreshTokenValiditySeconds(50000);
     }
